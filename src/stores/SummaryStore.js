@@ -3,6 +3,7 @@ import * as ActionTypes from '../ActionTypes'
 import CouterStore from './CouterStore'
 import {EventEmitter } from 'events'
 const CHANGE_EVENT = 'changed'
+
 function computeSummary(counterValues) {
     let sum = 0
     for(const key in counterValues){
