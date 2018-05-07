@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as Actions from '../ActionTypes'
-import CouterStore from '../stores/CouterStore.js'
+import CounterStore from '../stores/CounterStore.js'
 
 class Counter extends Component {
     constructor(props) {

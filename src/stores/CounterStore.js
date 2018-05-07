@@ -10,9 +10,9 @@ const counterValues = {
 
 const CHANGE_EVENT = 'changed'
 
-const CouterStore = Object.assginz({}, EventEmitter.prototype, {
-    getCouterValues: function () {
-        return couterValues
+const CounterStore = Object.assginz({}, EventEmitter.prototype, {
+    getCounterValues: function () {
+        return counterValues
     },
     emitChange: function() {
         this.emit(CHANGE_EVENT);
@@ -25,14 +25,14 @@ const CouterStore = Object.assginz({}, EventEmitter.prototype, {
     }
 })
 
-CouterStore.dispatchToken = AppDispatcher.register((action) => {
+CounterStore.dispatchToken = AppDispatcher.register((action) => {
     if (action.type === ActionTypes.INCREMENT) {
-        counterValues[action.couterCaption]++;
-        CouterStore.emitChange();
+        counterValues[action.counterCaption]++;
+        CounterStore.emitChange();
     } else if (action.type === ActionTypes.DECREMENT) {
-        counterValues[action.couterCaption]--;
-        CouterStore.emitChange();
+        counterValues[action.counterCaption]--;
+        CounterStore.emitChange();
     }
 })
 
-export default CouterStore
+export default CounterStore

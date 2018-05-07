@@ -1,16 +1,16 @@
 import * as ActionTypes from './ActionTypes';
 import AppDispatcher from './AppDispatcher';
 
-export const increment = (couterCaption) => {
+export const increment = (counterCaption) => {
     AppDispatcher.dispatch({
         type: ActionTypes.INCREMENT,
-        couterCaption: couterCaption
+        counterCaption: counterCaption
     })
 }
 
-export const decrement = (couterCaption) => {
+export const decrement = (counterCaption) => {
     AppDispatcher.dispatch({
         type: ActionTypes.DECREMENT,
-        couterCaption: couterCaption
+        counterCaption: counterCaption
     })
 }
