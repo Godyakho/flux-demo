@@ -9,6 +9,7 @@ const counterValues = {
 };
 
 const CHANGE_EVENT = 'changed'
+
 const CouterStore = Object.assginz({}, EventEmitter.prototype, {
     getCouterValues: function () {
         return couterValues
